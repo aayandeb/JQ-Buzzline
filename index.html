@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Buzzer Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <img src="https://i.imgur.com/K4IHkfL.png" alt="jq buzzline" class="logo-image">
+        <!-- <h1 class="title-text">Josephite Quizzing</h1> -->
+
+
+        <div class="buzzer-container">
+            <div class="buzzer" id="buzzer1" onclick="buzz(1, 'Team 1')">1</div>
+            <div class="buzzer" id="buzzer2" onclick="buzz(2, 'Team 2')">2</div>
+            <div class="buzzer" id="buzzer3" onclick="buzz(3, 'Team 3')">3</div>
+            <div class="buzzer" id="buzzer4" onclick="buzz(4, 'Team 4')">4</div>
+            <div class="buzzer" id="buzzer5" onclick="buzz(5, 'Team 5')">5</div>
+            <div class="buzzer" id="buzzer6" onclick="buzz(6, 'Team 6')">6</div>
+            <div class="buzzer" id="buzzer7" onclick="buzz(7, 'Team 7')">7</div>
+            <div class="buzzer" id="buzzer8" onclick="buzz(8, 'Team 8')">8</div>
+            <div class="buzzer" id="buzzer9" onclick="buzz(9, 'Team 9')">9</div>
+            <div class="buzzer" id="buzzer0" onclick="buzz(0, 'Team 10')">0</div>
+            <div class="buzzer" id="buzzera" onclick="buzz('a', 'Team 11')">11</div>
+            <div class="buzzer" id="buzzers" onclick="buzz('s', 'Team 12')">12</div>
+            <div class="buzzer" id="buzzerd" onclick="buzz('d', 'Team 13')">13</div>
+            <div class="buzzer" id="buzzerf" onclick="buzz('f', 'Team 14')">14</div>
+        </div>
+
+        <div id="queue-container">
+            <div id="queue">Queue:</div>
+            <button id="resetButton" onclick="resetQueue()">Reset Queue</button>
+        </div>
+
+        <div id="disqualified-container">
+            <div id="disqualified">Disqualified:</div>
+        </div>
+    </div>
+
+    <div id="signature" class="signature">
+        Constructed with carelessness<br>
+        Aayan Pratim Deb<br>
+        Giants Class of 2021
+    </div>
+
+    <audio id="buzzerSound">
+        <source src="buzzer.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="darkModeButton" onclick="toggleDarkMode()">Dark Mode</button>
+    <button id="idleModeButton" onclick="toggleIdleMode()">Idle Mode</button>
+    <button id="rockModeButton" onclick="redirectRickroll()">Rock Mode</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html> 
